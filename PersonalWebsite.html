@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="PersonalWebsite1.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+    <body>
+        <section id="banner">
+            <div class="banner-text">
+                <h1>Get to Know More <br>About Me</h1>
+                <p>Please See My Website</p>
+                <div class="banner-btn">
+                    <a href="#AboutMe"><span></span>ABOUT ME</a>
+                    <a href="#footer"><span></span>CONTACT</a>
+                </div>
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#banner">HOME</a></li>
+                    <li><a href="#AboutMe">ABOUT ME</a></li>
+                    <li><a href="#Gallery">GALLERY</a></li>
+                    <li><a href="#footer">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="C:\Users\ADMIN\Downloads\menu-icon-8.png" id="menu">
+        </div>
+        <!--About Me-->
+        <section id="AboutMe">
+            <div class="title-text">
+                <p>ABOUT ME</p>
+                <h1>What About Me?</h1>
+            </div>
+            <div class="AboutMe-box">
+                <div class ="Myself">
+                    <h1>All About Me</h1>
+                    <div class="Myself-desc">
+                        <div class="Myself-icon">
+                        <i class="fa-solid fa-basketball"></i>
+                        </div>
+                            <div class="Myself-text">
+                                <p> Hi, my name is Kyle Adriene S. Rojo, I am 20 years old and currently studying at Adamson University taking the course of Information Technology.
+                                    I love playing basketball, It is my hobby and my passion 
+                                    to play basketball because I find it enjoyable. I like the competitiveness and the intensity of
+                                     playing basketabll with the others which is why I am really quite fond of playing basketball.</p>
+                            </div>
+                       </div>
+                     
+                    <div class="Myself-desc">
+                        <div class="Myself-icon">
+                        <i class="fa-solid fa-basketball"></i>
+                        </div>
+                            <div class="Myself-text">
+                                <p>I have a little brother about the age of a teenager. I am family-oriented and love my family. 
+                                    I do not take things for granted and I wanted to spend time with my beloved ones so that 
+                                    I will live with no regrets. </p>
+                            </div>
+                       </div>
+                    
+                    <div class="Myself-desc">
+                        <div class="Myself-icon">
+                        <i class="fa-solid fa-basketball"></i>
+                        </div>
+                            <div class="Myself-text">
+                                <p></p>
+                            </div>
+                       </div>              
+                    </div>
+                <div class ="Myself-img">
+                    <img src="C:\Users\ADMIN\Downloads\52678040_2342955159061962_4675624904505163776_n.jpg">
+                    
+                </div>
+                
+        </section>
+        <!--Gallery-->
+        <section id="Gallery">
+            <div class="title-text">
+                <p>Gallery</p>
+                <h1>GALLERY</h1>
+            </div>
+            <div class="Gallery-box">
+                <div class="single-gallery">
+                    <img src="C:\Users\ADMIN\Downloads\me2.jpg">
+                    <div class="overlay"></div>
+                    <div class="gallery-desc">
+                        <h3>14th BIRTHDAY</h3>
+                        <hr>
+                        <p>This is me celebrating my 14th birthday</p>
+                    </div>
+                </div>
+                <div class="single-gallery">
+                    <img src="C:\Users\ADMIN\Downloads\554130_499319033420042_1668459284_n.jpg">
+                    <div class="overlay"></div>
+                    <div class="gallery-desc">
+                        <h3>My First Bike</h3>
+                        <hr>
+                        <p>This is me with my first bike</p>
+                    </div>
+                </div>
+                <div class="single-gallery">
+                    <img src="C:\Users\ADMIN\Downloads\52678040_2342955159061962_4675624904505163776_n.jpg">
+                    <div class="overlay"></div>
+                    <div class="gallery-desc">
+                        <h3>Adolescence</h3>
+                        <hr>
+                        <p>This is me in my Adolescence years</p>
+                    </div>
+                </div>
+                <div class="single-gallery">
+                    <img src="C:\Users\ADMIN\Downloads\ME5.jpg">
+                    <div class="overlay"></div>
+                    <div class="gallery-desc">
+                        <h3>7 yrs old me</h3>
+                        <hr>
+                        <p>This is me when I am still a child</p>
+                    </div>
+                </div>
+            </div>
+                
+                    
+
+        </section>
+        <!--footer-->
+        <section id="footer">
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1>Contact Me!</h1>
+            </div>
+            <div class="footer-row">
+            <div class="footer-left">
+
+            </div>
+            <div class="footer-right"></div>
+            </div>
+        </section>
+        
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menuBtn = document.getElementById("menu")
+            sideNav.style.right ="-250px";
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+        </script>
+
+    </body>
+</html>
